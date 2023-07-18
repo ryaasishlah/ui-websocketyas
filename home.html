@@ -30,6 +30,30 @@
     
 </head>
 
+<style>
+
+</style>
+            <div class="bg-yellow px-6 py-8 rounded shadow-md text-black w-full">
+            <h1 class="mb-8 text-3xl text-center">Hi There 👋 </h1>
+                <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+
+                     <input type="text" 
+                        class="block border border-grey-light w-full p-3 rounded mb-4" 
+                            id="username" 
+                                placeholder="Write Your Username Here" />
+   
+            <input type="text" 
+                class="block border border-grey-light w-full p-3 rounded mb-4" 
+                id="message" 
+                placeholder="Write Your Message Here" />
+                 <br>
+                <button id="send" class="w-full text-center py-3 rounded bg-grey text-white hover:bg-green-dark focus:outline-none my-1">send</button>
+                 <div id="messages" class="bg-white px-6 py-8 scrool shadow-md text-black w-full"></div><br>
+        </div>
+            </div>
+                    </div>
+
+
 <script>
         $(function() {
             var socket = new WebSocket("wss://https://websocketyas-f3d61de3b829.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
